@@ -9,5 +9,8 @@
 3. Game states detector
 4. Indication of the winner
 
+## ScreenShots from the GamePlay:
 
+
+![image](./assets/start-image.png)
    
