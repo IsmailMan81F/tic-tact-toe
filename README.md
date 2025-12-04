@@ -11,6 +11,17 @@
 
 ## ScreenShots from the GamePlay:
 
+### Start of the Game : 
 
 ![image](./assets/start-image.png)
+
+
+### Toggle history : 
+
+![image](./assets/toggle-image.png)
+
+
+### Win The game : 
+
+![image](./assets/win-image.png)
    
