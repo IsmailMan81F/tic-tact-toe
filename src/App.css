@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "poppins";
+  border: 0;
+  box-sizing: border-box;
+}
+
+.fullBoard {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+}
+
+.square {
+  border: 2px solid black;
+  background-color: rgb(45, 43, 143);
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+
+  /* Glass background */
+  background: rgba(255, 255, 255, 0.59);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Neon gradient border */
+  border: 2px solid transparent;
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  /* Smooth glow / transform */
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.square:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(250, 68, 18, 0.6);
+  opacity: 0.9;
+}
+
+.gameBoard {
+  width: 36%;
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 10px;
+  height: 360px;
+  margin: 130px;
+}
+
+.toggleButton {
+  background-color: rgb(163, 33, 33);
+}
+
+.gameNavigation {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.gameMoves {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 78%;
+  margin-top: 40px;
+  width: 80%;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15); /* light transparent layer */
+  backdrop-filter: blur(12px); /* BLUR effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toggleButton {
+  display: block;
+  margin: 10px 0; /* space between buttons */
+  font-size: 15px;
+  width: 180px;
+  padding: 5px;
+  border-radius: 8px;
+  letter-spacing: -1px;
+  font-family: "JetBrains Mono";
+  background: linear-gradient(90deg, rgb(189, 8, 255), blue);
+  transition: background-color 0.4s;
+}
+
+.toggleButton:hover {
+  background: linear-gradient(90deg, #bd08ffa6, rgba(1, 1, 255, 0.585));
+}
+
+ol {
+  list-style-type: none;
+}
+
+.moveButton {
+  padding: 6px 15px;
+  border-radius: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  font-family: "JetBrains Mono";
+  cursor: pointer;
+
+  /* glass background */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* gradient border */
+  border: 2px solid transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.12)
+    ),
+    linear-gradient(135deg, #ccccccb7, #7c25d8, #1b73ef);
+  background-origin: border-box;
+
+  /* transitions */
+  transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.3s ease,
+    background 0.3s ease;
+}
+
+.moveButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(123, 0, 255, 0.5);
+  opacity: 0.95;
+}
+
+.moveButton:active {
+  transform: scale(0.96);
+}
+
+.sectionSeparator {
+  width: 100%;
+  height: 8px;
+  border-radius: 6px;
+  margin: 12px 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.stats {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "JetBrains Mono";
+}
+
+.states {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+span {
+  font-family: "JetBrains Mono";
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 4px;
+
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #ff004c, #7b00ff, #006aff) 1;
+  margin-bottom: 8px;
+}
+
